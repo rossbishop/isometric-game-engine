@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>camera.h</itemPath>
+      <itemPath>entity.h</itemPath>
+      <itemPath>functions.h</itemPath>
+      <itemPath>game.h</itemPath>
+      <itemPath>globals.h</itemPath>
+      <itemPath>input.h</itemPath>
+      <itemPath>level.h</itemPath>
+      <itemPath>player.h</itemPath>
+      <itemPath>renderer.h</itemPath>
+      <itemPath>sprite.h</itemPath>
+      <itemPath>tile.h</itemPath>
+      <itemPath>tileset.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>camera.cpp</itemPath>
+      <itemPath>entity.cpp</itemPath>
+      <itemPath>functions.cpp</itemPath>
+      <itemPath>game.cpp</itemPath>
+      <itemPath>input.cpp</itemPath>
+      <itemPath>level.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>player.cpp</itemPath>
+      <itemPath>renderer.cpp</itemPath>
+      <itemPath>sprite.cpp</itemPath>
+      <itemPath>tile.cpp</itemPath>
+      <itemPath>tileset.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <architecture>2</architecture>
+          <standard>11</standard>
+          <incDir>
+            <pElem>/usr/include/SDL2</pElem>
+            <pElem>/usr/include/nlohmann</pElem>
+          </incDir>
+          <commandLine>-lSDL2 -lSDL2_image</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/lib/x86_64-linux-gnu</pElem>
+          </linkerAddLib>
+          <commandLine>-lSDL2 -lSDL2_image</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="camera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="camera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="entity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="entity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="functions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="functions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="game.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="game.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="globals.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="level.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="level.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="player.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="player.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="renderer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="renderer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sprite.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="sprite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tileset.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tileset.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <architecture>2</architecture>
+          <standard>11</standard>
+          <incDir>
+            <pElem>/usr/include/SDL2</pElem>
+            <pElem>/usr/include/nlohmann</pElem>
+          </incDir>
+          <commandLine>-lSDL2 -lSDL2_image</commandLine>
+        </ccTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/lib/x86_64-linux-gnu</pElem>
+          </linkerAddLib>
+          <commandLine>-lSDL2 -lSDL2_image</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="camera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="camera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="entity.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="entity.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="functions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="functions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="game.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="game.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="globals.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="level.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="level.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="player.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="player.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="renderer.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="renderer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sprite.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="sprite.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tile.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="tile.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tileset.cpp" ex="false" tool="1" flavor2="11">
+      </item>
+      <item path="tileset.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
